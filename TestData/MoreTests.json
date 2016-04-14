@@ -1,0 +1,21 @@
+﻿{
+    "requests": [
+        {
+            "testName": "Unauthorized/unauthenticated user",
+            "url": "/api/notauth/",
+            "verb": "GET",
+            "data": "",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "expectedResponse": {
+                "statusCode": "401"
+            },
+            "repeat": 10
+        }
+
+    ]
+}

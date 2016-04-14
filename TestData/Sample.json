@@ -1,0 +1,45 @@
+{
+    "startupTimeout": 900,
+    "requestTimeout": 120,
+    "threadsToUse": 1,
+
+    "importRequests": [
+        "./TestData/MoreTests.json"
+    ],
+
+    "requests": [
+        {
+            "testName": "Valid request",
+            "url": "/api/route1/",
+            "verb": "GET",
+            "data": "data=28",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "expectedResponse": {
+                "statusCode": "200",
+                "bodyRegEx": "{ \"success\":\\s\"ok\" }"
+            },
+            "repeat": 10
+        },
+        {
+            "testName": "Bad request model",
+            "url": "/api/route/",
+            "verb": "GET",
+            "data": "",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "expectedResponse": {
+                "statusCode": "400"
+            },
+            "repeat": 1
+        }
+    ]
+}
