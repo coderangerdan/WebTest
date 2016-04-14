@@ -92,6 +92,7 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="LICENSE" />
     <None Include="packages.config" />
     <None Include="TestData\MoreTests.json" />
     <None Include="TestData\Sample.json">
