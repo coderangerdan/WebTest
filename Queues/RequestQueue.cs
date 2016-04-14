@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="PrioritisedQueue.cs" company="CodeRanger.com">
+// <copyright file="RequestQueue.cs" company="CodeRanger.com">
 //     Copyright (c) CodeRanger.com. All rights reserved.
 // </copyright>
 // <author>Dan Petitt</author>

@@ -12,10 +12,6 @@ namespace WebTest.Logging
 
     public class LoggerConsoleShim : ILogger
     {
-        /// <summary>
-        /// Does nothing.
-        /// </summary>
-        /// <param name="message">ignored parameter</param>
         public void Info( string message )
         {
             Console.Out.WriteLine( message );
